@@ -24,23 +24,13 @@ This lab is designed to simulate **realistic cyber attacks** on both **endpoints
 |----------------|--------------------------------------|
 | Endpoint Security | Sysmon, Wazuh Agent, Windows Event Logs |
 | Network Monitoring | Wireshark, Suricata, tcpdump       |
-| SIEM/Log Analysis | Wazuh, ELK Stack (Elasticsearch, Logstash, Kibana) |
-| Offensive Simulation | Kali Linux, Metasploit, mimikatz, PowerSploit |
-| Detection Frameworks | MITRE ATT&CK, Sigma Rules         |
-| Virtualization | VMware Workstation / Fusion          |
+| SIEM/Log Analysis | Wazuh |
+| Offensive Simulation | Kali Linux, Metasploit,|
+| Detection Frameworks | MITRE ATT&CK,  |
+| Virtualization | VMware Fusion    |
 
 ---
-
-## 🔬 Lab Topology
-
-- **Ubuntu VM**: Wazuh Manager + ELK Stack
-- **Windows 10/11 VM**: Victim endpoint with Wazuh agent
-- **Kali Linux VM**: Attacker machine for red team simulations
-- **Optional Router**: Isolated lab environment, no internet access
-
----
-
-## 📌 Example Simulated Attacks
+## 📌 Example Attacks Simulated in these labs
 
 | Category | Technique | MITRE ID |
 |---------|-----------|----------|
@@ -63,24 +53,3 @@ This lab is designed to simulate **realistic cyber attacks** on both **endpoints
 
 ---
 
-## 🛠️ Getting Started
-
-1. Clone this repository and review lab documentation
-2. Deploy VMs and set up networking (bridge or host-only)
-3. Install and configure Wazuh Manager + agent
-4. Run simulated attacks from Kali to Windows
-5. Review alerts, logs, and detection outputs in Kibana
-
----
-
-## 📂 Folder Structure
-
-```bash
-cyber-blue-team-lab/
-├── configs/                  # Wazuh and Sysmon config files
-├── rules/                    # Custom detection rules
-├── scripts/                  # Attack simulation scripts (PowerShell, batch)
-├── logs/                     # Sample logs and PCAPs
-├── dashboards/               # Kibana dashboards (JSON exports)
-├── reports/                  # Summary of exercises and detections
-└── README.md
